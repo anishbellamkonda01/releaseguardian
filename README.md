@@ -177,11 +177,6 @@ Generates actionable recovery artifacts:
 
 ---
 
-## 📄 License
-
-MIT License — see [LICENSE](LICENSE) for details.
-
----
 
 ## 🙏 Acknowledgments
 
