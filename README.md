@@ -72,7 +72,7 @@ Engineering teams push code every day, but **risky deployments slip through** be
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/releaseguardian.git
+git clone https://github.com/anishbellamkonda01/releaseguardian.git
 cd releaseguardian
 
 # Create virtual environment
