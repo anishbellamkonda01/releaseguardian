@@ -3,7 +3,6 @@ Gemini Client Setup
 This file creates the connection to Google's Gemini AI.
 Every agent imports from here.
 """
-
 import os
 import json
 import pathlib
@@ -11,18 +10,25 @@ from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 
-# Load the API key from .env file
-# Use explicit path to avoid "file not found" issues
+# Load the API key from .env file (for local development)
 load_dotenv(pathlib.Path(__file__).resolve().parent.parent / ".env")
 
-# Get the API key
-api_key = os.getenv("GOOGLE_API_KEY")
+# Try Streamlit secrets first (for cloud), then .env (for local)
+try:
+    import streamlit as st
+    api_key = st.secrets.get("GOOGLE_API_KEY", None)
+except Exception:
+    api_key = None
+
+# Fall back to .env / environment variable
+if not api_key:
+    api_key = os.getenv("GOOGLE_API_KEY")
 
 # Check if the key exists
 if not api_key or api_key == "paste-your-api-key-here":
     raise ValueError(
         "GOOGLE_API_KEY not found! "
-        "Make sure you have a .env file with your real API key."
+        "Add it to Streamlit secrets or your .env file."
     )
 
 # Create the Gemini client
@@ -62,6 +68,7 @@ def call_gemini(prompt, model=FLASH_MODEL, temperature=0.3, system_instruction=N
             contents=prompt,
             config=config,
         )
+
         return response.text
 
     except Exception as e:
