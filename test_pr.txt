@@ -1,7 +1,0 @@
-PR #999: Update login timeout
-Files changed: src/auth-service/handlers/login_handler.py
-
-- LOGIN_TIMEOUT_MS = 5000
-+ LOGIN_TIMEOUT_MS = 10000
-
-No tests modified.

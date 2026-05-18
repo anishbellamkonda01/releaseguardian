@@ -1,5 +1,0 @@
-TICKET: AUTH-500
-Title: Increase login timeout for slow networks
-Priority: Medium
-Description: Users on slow networks are getting login timeouts.
-Increase from 5s to 10s.
