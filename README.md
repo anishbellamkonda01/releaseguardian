@@ -171,15 +171,10 @@ Generates actionable recovery artifacts:
 ## 🛠️ Tech Stack
 
 - **Frontend**: Streamlit + Custom HTML/CSS (dark theme)
-- **AI**: Google Gemini 2.5 Flash (multi-agent pipeline)
+- **AI**: Google Gemini 2.5 Flash Lite (multi-agent pipeline)
 - **Language**: Python 3.10+
 - **Design**: Space Grotesk + JetBrains Mono, Linear/Raycast-inspired dark UI
 
----
-
-## 📄 License
-
-MIT License — see [LICENSE](LICENSE) for details.
 
 ---
 
