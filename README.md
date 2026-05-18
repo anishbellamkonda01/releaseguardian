@@ -8,7 +8,7 @@ ReleaseGuardian uses a **3-agent Gemini AI pipeline** to analyze code changes, J
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.35+-red?logo=streamlit&logoColor=white)
-![Gemini](https://img.shields.io/badge/Google%20Gemini-2.5%20Flash-4285F4?logo=google&logoColor=white)
+![Gemini](https://img.shields.io/badge/Google%20Gemini-2.5%20Flash%20Lite-4285F4?logo=google&logoColor=white)
 
 ---
 
@@ -175,17 +175,20 @@ Generates actionable recovery artifacts:
 - **Language**: Python 3.10+
 - **Design**: Space Grotesk + JetBrains Mono, Linear/Raycast-inspired dark UI
 
+---
+
+## 📄 License
+
+MIT License — see [LICENSE](LICENSE) for details.
 
 ---
 
 ## 🙏 Acknowledgments
 
-Built for the **Google Gemini API Hackathon** — demonstrating multi-agent AI architecture for enterprise DevOps risk management.
+Built for the **Google Gemini API Hackathon** — demonstrating multi-agent AI architecture for enterprise DevOps risk management. Powered by Gemini 2.5 Flash Lite.
 
 ---
 
 <p align="center">
-  <b>Built with Google Gemini 2.5 Flash · Multi-Agent Architecture · Python + Streamlit</b>
+  <b>Built with Google Gemini 2.5 Flash Lite · Multi-Agent Architecture · Python + Streamlit</b>
 </p>
-# releaseguradian
-# releaseguardian
